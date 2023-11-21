@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "k-connected-graph"
+version = "0.1.0"
+description = "Generator of edges for a graph of n nodes, each of which is connected k others"
+authors = ["Lukas Neuenschwander <lukas.neu24@gmail.com>"]
+readme = "README.md"
+license = "ISC"
+include = ["LICENSE.md"]
+packages = [{include ="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+networkx = "^3.2.1"
+matplotlib = "^3.8.2"
+
+[tool.poetry.dev-dependencies]
+black = "^23.11.0"
+
+[tool.black]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
